@@ -72,7 +72,7 @@ let precipitationType = new Chart(document.getElementById("precipitationType").g
                     window.chartColors.orange,
                     window.chartColors.yellow,
                     window.chartColors.blue,
-                ]
+                ],
                 data:[0,0,0,0]
             }
         ]
@@ -94,7 +94,7 @@ let windDirection = new PolarArea(document.getElementById("windDirection"), {
                     window.chartColors.orange,
                     window.chartColors.yellow,
                     window.chartColors.blue,
-                ]
+                ],
                 data:[0,0,0,0]
             }
         ]
@@ -123,7 +123,7 @@ let cloudType = new Chart(document.getElementById("cloudType").getContext("2d"),
                     window.chartColors.yellow,
                     window.chartColors.blue,
                     window.chartColors.green,
-                ]
+                ],
                 data:[0,0,0,0,0,0,0,0,0,0]
             }
         ]
@@ -145,7 +145,7 @@ let cloudDirection = new PolarArea(document.getElementById("cloudDirection"), {
                     window.chartColors.orange,
                     window.chartColors.yellow,
                     window.chartColors.blue,
-                ]
+                ],
                 data:[0,0,0,0]
             }
         ]
