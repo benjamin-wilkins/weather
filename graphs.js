@@ -133,7 +133,7 @@ let cloudType = new Chart(document.getElementById("cloudType").getContext("2d"),
                     window.chartColors.blue,
                     window.chartColors.green,
                 ],
-                data:[0,0,0,0,0,0,0,8,0,0]
+                data:[0,0,0,0,0,0,0,1,0,0]
             }
         ]
     },
