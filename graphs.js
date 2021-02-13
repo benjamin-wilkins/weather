@@ -14,13 +14,13 @@ let temperature = new Chart(document.getElementById("temperature").getContext("2
                 label:"MET Office",
                 backgroundColor:window.chartColors.red,
                 borderColor:window.chartColors.red,
-                data:[]
+                data:[-1]
             },
             {
                 label:"My Observations",
                 backgroundColor:window.chartColors.blue,
                 borderColor:window.chartColors.blue,
-                data:[]
+                data:[-3]
             }
         ]
     },
@@ -39,7 +39,7 @@ let precipitationPercent = new Chart(document.getElementById("precipitationPerce
                 label:"MET Office",
                 backgroundColor:window.chartColors.red,
                 borderColor:window.chartColors.red,
-                data:[]
+                data:[50]
             }
         ]
     },
@@ -58,7 +58,7 @@ let precipitationMm = new Chart(document.getElementById("precipitationMm").getCo
                 label:"My Observations",
                 backgroundColor:window.chartColors.blue,
                 borderColor:window.chartColors.blue,
-                data:[]
+                data:[0]
             }
         ]
     },
@@ -104,7 +104,7 @@ let windDirection = new Chart(document.getElementById("windDirection"), {
                     window.chartColors.yellow,
                     window.chartColors.blue,
                 ],
-                data:[0,0,0,0]
+                data:[0,1,0,0]
             }
         ]
     },
@@ -133,7 +133,7 @@ let cloudType = new Chart(document.getElementById("cloudType").getContext("2d"),
                     window.chartColors.blue,
                     window.chartColors.green,
                 ],
-                data:[0,0,0,0,0,0,0,0,0,0]
+                data:[0,0,0,0,0,0,0,8,0,0]
             }
         ]
     },
@@ -175,7 +175,7 @@ let oktas = new Chart(document.getElementById("oktas").getContext("2d"), {
                 label:"My Observations",
                 backgroundColor:window.chartColors.blue,
                 borderColor:window.chartColors.blue,
-                data:[]
+                data:[8]
             }
         ]
     },
