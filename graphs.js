@@ -92,7 +92,8 @@ let precipitationType = new Chart(document.getElementById("precipitationType").g
     }
 });
 
-let windDirection = new PolarArea(document.getElementById("windDirection"), {
+let windDirection = new Chart(document.getElementById("windDirection"), {
+    type: 'polarArea',
     data: {
         labels:["North", "East", "South", "West"],
         datasets:[{
@@ -143,7 +144,8 @@ let cloudType = new Chart(document.getElementById("cloudType").getContext("2d"),
     }
 });
 
-let cloudDirection = new PolarArea(document.getElementById("cloudDirection"), {
+let cloudDirection = new Chart(document.getElementById("cloudDirection"), {
+    type: 'polarArea',
     data: {
         labels:["North", "East", "South", "West"],
         datasets:[{
