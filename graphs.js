@@ -11,7 +11,7 @@ let temperature = new Chart(document.getElementById("temperature").getContext("2
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021"],
+        labels:["13/2/2021","14/2/2021"],
         fill: false,
         datasets:[{
                 label:"MET Office",
@@ -22,6 +22,7 @@ let temperature = new Chart(document.getElementById("temperature").getContext("2
             {
                 label:"My Observations",
                 borderColor:window.chartColors.blue,
+                backgroundColor: window.chartColors.none,
                 data:[-3,0]
             }
         ]
@@ -37,7 +38,7 @@ let precipitationPercent = new Chart(document.getElementById("precipitationPerce
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021"],
+        labels:["13/2/2021","14/2/2021"],
         fill: false,
         datasets:[{
                 label:"MET Office",
@@ -58,7 +59,7 @@ let precipitationMm = new Chart(document.getElementById("precipitationMm").getCo
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021"],
+        labels:["13/2/2021","14/2/2021"],
         fill: false,
         datasets:[{
                 label:"My Observations",
@@ -177,7 +178,7 @@ let oktas = new Chart(document.getElementById("oktas").getContext("2d"), {
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021"],
+        labels:["13/2/2021","14/2/2021"],
         datasets:[{
                 label:"My Observations",
                 borderColor:window.chartColors.blue,
