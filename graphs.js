@@ -3,7 +3,8 @@ window.chartColors = {
     orange: 'rgb(255, 159, 64)',
     yellow: 'rgb(255, 205, 86)',
     green: 'rgb(75, 192, 192)',
-    blue: 'rgb(54, 162, 235)'
+    blue: 'rgb(54, 162, 235)',
+    none: 'rgba(0, 0, 0, 0)'
 }
 
 let temperature = new Chart(document.getElementById("temperature").getContext("2d"), {
@@ -15,6 +16,7 @@ let temperature = new Chart(document.getElementById("temperature").getContext("2
         datasets:[{
                 label:"MET Office",
                 borderColor:window.chartColors.red,
+                backgroundColor: window.chartColors.none,
                 data:[-1,2]
             },
             {
@@ -39,8 +41,8 @@ let precipitationPercent = new Chart(document.getElementById("precipitationPerce
         fill: false,
         datasets:[{
                 label:"MET Office",
-                backgroundColor:window.chartColors.red,
                 borderColor:window.chartColors.red,
+                backgroundColor: window.chartColors.none,
                 data:[50,90]
             }
         ]
@@ -61,6 +63,7 @@ let precipitationMm = new Chart(document.getElementById("precipitationMm").getCo
         datasets:[{
                 label:"My Observations",
                 borderColor:window.chartColors.blue,
+                backgroundColor: window.chartColors.none,
                 data:[0,1]
             }
         ]
@@ -178,6 +181,7 @@ let oktas = new Chart(document.getElementById("oktas").getContext("2d"), {
         datasets:[{
                 label:"My Observations",
                 borderColor:window.chartColors.blue,
+                backgroundColor: window.chartColors.none,
                 data:[8,8]
             }
         ]
