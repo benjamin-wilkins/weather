@@ -11,19 +11,19 @@ let temperature = new Chart(document.getElementById("temperature").getContext("2
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021","14/2/2021","15/2/2021"],
+        labels:["13/2/2021","14/2/2021","15/2/2021","16/2/2021"],
         fill: false,
         datasets:[{
                 label:"MET Office",
                 borderColor:window.chartColors.red,
                 backgroundColor: window.chartColors.none,
-                data:[-1,2,9]
+                data:[-1,2,9,8]
             },
             {
                 label:"My Observations",
                 borderColor:window.chartColors.blue,
                 backgroundColor: window.chartColors.none,
-                data:[-3,0,7]
+                data:[-3,0,7,7]
             }
         ]
     },
@@ -38,13 +38,13 @@ let precipitationPercent = new Chart(document.getElementById("precipitationPerce
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021","14/2/2021","15/2/2021"],
+        labels:["13/2/2021","14/2/2021","15/2/2021","16/2/2021"],
         fill: false,
         datasets:[{
                 label:"MET Office",
                 borderColor:window.chartColors.red,
                 backgroundColor: window.chartColors.none,
-                data:[50,90,5]
+                data:[50,90,5,90]
             }
         ]
     },
@@ -59,13 +59,13 @@ let precipitationMm = new Chart(document.getElementById("precipitationMm").getCo
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021","14/2/2021","15/2/2021"],
+        labels:["13/2/2021","14/2/2021","15/2/2021","16/2/2021"],
         fill: false,
         datasets:[{
                 label:"My Observations",
                 borderColor:window.chartColors.blue,
                 backgroundColor: window.chartColors.none,
-                data:[0,1,3]
+                data:[0,1,3,5]
             }
         ]
     },
@@ -88,7 +88,7 @@ let precipitationType = new Chart(document.getElementById("precipitationType").g
                     window.chartColors.yellow,
                     window.chartColors.blue,
                 ],
-                data:[2,0,0,0]
+                data:[3,0,0,0]
             }
         ]
     },
@@ -140,7 +140,7 @@ let cloudType = new Chart(document.getElementById("cloudType").getContext("2d"),
                     window.chartColors.blue,
                     window.chartColors.green,
                 ],
-                data:[0,0,0,0,0,0,1,1,0,1]
+                data:[0,0,0,0,0,0,2,1,0,1]
             }
         ]
     },
@@ -163,7 +163,7 @@ let cloudDirection = new Chart(document.getElementById("cloudDirection"), {
                     window.chartColors.yellow,
                     window.chartColors.blue,
                 ],
-                data:[0,0,1,0]
+                data:[0,0,1,1]
             }
         ]
     },
@@ -178,12 +178,12 @@ let oktas = new Chart(document.getElementById("oktas").getContext("2d"), {
     type: 'line',
     fill: false,
     data: {
-        labels:["13/2/2021","14/2/2021","15/2/2021"],
+        labels:["13/2/2021","14/2/2021","15/2/2021","16/2/2021"],
         datasets:[{
                 label:"My Observations",
                 borderColor:window.chartColors.blue,
                 backgroundColor: window.chartColors.none,
-                data:[8,8,6]
+                data:[8,8,6,5]
             }
         ]
     },
