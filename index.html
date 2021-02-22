@@ -20,6 +20,9 @@
           <img src="/weather/weather.ico" width="32px" height="32px"></img>
           Weather Challenge
         </a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#conclusion">
+          View Conclusion
+        </button>
       </div>
     </nav>
     
@@ -519,7 +522,28 @@
       </div>
     </footer>
     <p class="fixed-bottom text-end rounded-pill"><a href="#" class="btn btn-primary" style="margin:10px"><i class="bi bi-chevron-up"></i></a></p>
-
+    
+    <div class="modal fade" id="conclusion" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Conclusion</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Overal, the MET office weather reports have been mostly correct. Throughout the week, the temperature recorded has been 2-4 °C colder than forecasted, likely
+              because of a microclimate.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <!-- Chart JS -->
